@@ -178,24 +178,19 @@
           The task is close to text summarization. Our objective is to drive Speech and Natural Language Processing community effort towards this important task.
         </p>
 
-        <h3>CL-SciSumm Task</h3>
+        <h3>AutoMin Task</h3>
 
         <p>
-          The task is defined as follows:
+          We propose one main task and two subsidiary tasks.
         </p>
 
         <ul>
+            <strong>Main Task A:</strong> The main task consists of automatically creating minutes from multiparty meeting transcripts. The generated minute would be evaluated both via automatic and manual metrics.
           <li>
-            <strong>Given:</strong> A topic consisting of a Reference Paper (RP) and Citing Papers (CPs) that all contain citations to the RP. In each CP, the text spans (i.e., citances) have been identified that pertain to a particular citation to the RP.
+            <strong>Task B:</strong> Given a pair of meeting transcript and minute, the task is to identify whether the minute belongs to the transcript. During our data preparation from meetings on similar topics, we found that this task could be challenging given the similarity in various named-entities.
           </li>
           <li>
-            <strong>Task 1A:</strong> For each citance, identify the spans of text (cited text spans) in the RP that most accurately reflect the citance. These are of the granularity of a sentence fragment, a full sentence, or several consecutive sentences (no more than 5).
-          </li>
-          <li>
-            <strong>Task 1B:</strong> For each cited text span, identify what facet of the paper it belongs to, from a predefined set of facets.
-          </li>
-          <li>
-            <strong>Task 2 (optional bonus task):</strong> Finally, generate a structured summary of the RP from the cited text spans of the RP. The length of the summary should not exceed 250 words.
+            <strong>Task C:</strong> Given a pair of minutes, the task is to identify whether the two minutes belong to the same or different meetings. This sub-task is important as we want to uncover how minutes created by two different persons for the same meeting may differ in content and coverage.
           </li>
         </ul>
 
@@ -212,7 +207,7 @@
 
         <p>
           The training and test sets from previous years can be downloaded from <a
-            href="https://github.com/WING-NUS/scisumm-corpus">GitHub</a>.
+            href="">GitHub</a>.
         </p>
 
         <h3>Contact</h3>
