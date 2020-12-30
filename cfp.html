@@ -194,13 +194,14 @@
           </li>
         </ul>
 
-        <h4>Evaluation</h4>
+        <h3>Evaluation</h3>
 
         <p>
-          Task 1 will be scored by overlap of text spans measured by number of sentences in the system output vs the
-          gold standard created by human annotators. Task 2 will be scored using the ROUGE family of metrics between (i)
-          the system output and the gold standard summary from the reference spans (ii) the system output and the
-          asbtract of the reference paper.
+          For the manual evaluation, we will use several quality criteria which are common for evaluation of text samples produced by automatic language generation systems, such as adequacy, relevance, coverage, readability or grammaticality. 
+          Unlike other similar tasks, textual coherence will not be taken into account, because meeting minutes are not always supposed to have a coherent textual form. 
+          On the other hand, the correctness of the minutes' contents is very essential, as we want to assure that minutes correspond to what was really mentioned and decided at the meeting.
+          ROUGE would be the primary metric for automatic evaluation. 
+          However, given the abstractive nature of some minutes, we would include some recent semantic-level metrics: BERTScore and Sentence Mover Score.
         </p>
 
         <h3>Corpus</h3>
@@ -208,6 +209,12 @@
         <p>
           The training and test sets from previous years can be downloaded from <a
             href="">GitHub</a>.
+        </p>
+        
+        <h3>Submission Platform</h3>
+
+        <p>
+         We would host the shared task in CodaLab where participants would be submitting their system-runs.
         </p>
 
         <h3>Contact</h3>
