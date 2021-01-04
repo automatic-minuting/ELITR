@@ -168,20 +168,16 @@
         <h2 id="automin">AutoMin 2020: The 1<sup>st</sup> Shared Task on Automatic Minuting</h2>
 
         <p>
-          Ever since most of our interactions went virtual, the need for automatic support for smooth running of the online events became more intense. 
-          Automatic minuting tools would be an useful addition to better comprehend the meeting contents quickly.
-          Meeting minutes keep a record of what was discussed at a meeting. 
-          It is usually an unstructured written document used to inform participants and non-participants of what happened during the meeting. 
-          Automatic  minuting  is  challenging, partly  due  to  the  absence  of  agreed-upon  guidelines,  partly due to the variety of meetings,  their objectives,  and intended audience.   
-          The task is  relatively  new and there  is  not  enough  complete research with ready-to-use methods.  
-          The goal of this shared task is to investigate the  challenges  of automatic minuting with real meeting data in two different scenarios (technical meetings and parliamentary proceedings).
-          The task is close to text summarization. Our objective is to drive Speech and Natural Language Processing community effort towards this important task.
+          Ever since most of our interactions went virtual, the need for automatic support for smooth running of the online events, meetings became more intense. Summarizing meeting contents is one of them. Meeting minutes keep a record of what was discussed at a meeting. It is usually an unstructured written document used to inform participants and non-participants of what happened during the meeting. Automatic Minuting tools would be an useful addition to better comprehend the meeting contents quickly. People adopt different styles to record minutes of the meeting. The minutes also depend on the category of the meeting, the intended audience, and the goal or objective of the meeting. Text/Speech summarization would rank close to this task. However, Automatic Minuting is challenging due to the absence of agreed-upon guidelines, variety of minuting practices, and lack of extensive background research unlike Text or Speech Summarization. 
+        </p>
+        <p>
+          We propose the first shared task on Automatic Minuting of meeting proceedings. Our objective is to drive community efforts towards understanding the challenges of the task and develop tools for this important use-case especially in the current scenario. With this shared task we would invite the Speech and Natural Language Processing community to investigate the challenges of automatic minuting with real meeting data in two different settings: technical project meetings (both in English and Czech) and parliamentary proceedings (English). 
         </p>
 
         <h3>AutoMin Task</h3>
 
         <p>
-          We propose one main task and two subsidiary tasks.
+          We propose one main task and two subsidiary tasks. The subsidiary tasks are optional.
         </p>
 
         <ul>
@@ -193,28 +189,37 @@
             <strong>Task C:</strong> Given a pair of minutes, the task is to identify whether the two minutes belong to the same or different meetings. This sub-task is important as we want to uncover how minutes created by two different persons for the same meeting may differ in content and coverage.
           </li>
         </ul>
+        
+        <h3>Data</h3>
+        
+        <p>
+          The data for the shared task would be available in the following Github repository. More task-specific details to use the data would be provided in due time on our website.
+          <a href="https://github.com/ELITR">https://github.com/ELITR</a>
+        </p>
 
         <h3>Evaluation</h3>
 
         <p>
-          For the manual evaluation, we will use several quality criteria which are common for evaluation of text samples produced by automatic language generation systems, such as adequacy, relevance, coverage, readability or grammaticality. 
-          Unlike other similar tasks, textual coherence will not be taken into account, because meeting minutes are not always supposed to have a coherent textual form. 
-          On the other hand, the correctness of the minutes' contents is very essential, as we want to assure that minutes correspond to what was really mentioned and decided at the meeting.
-          ROUGE would be the primary metric for automatic evaluation. 
-          However, given the abstractive nature of some minutes, we would include some recent semantic-level metrics: BERTScore and Sentence Mover Score.
-        </p>
+          We would use both manual and automatic evaluation of the submissions. For the manual evaluation, we will use several quality criteria which are common for evaluation of text samples produced by automatic language generation systems: adequacy, relevance, coverage, readability and grammaticality. Unlike other similar tasks, textual coherence will not be taken into account, because we believe meeting minutes are not always supposed to have a coherent textual form. ROUGE would be the primary metric for automatic evaluation. However, given the abstractive nature of some minutes, we would also use two recent semantic-level metrics: BERTScore and Sentence Mover Score.
 
-        <h3>Corpus</h3>
+          For the subsidiary tasks (B and C), accuracy would be the evaluation metric.
 
-        <p>
-          The training and test sets from previous years can be downloaded from <a
-            href="">GitHub</a>.
         </p>
         
         <h3>Submission Platform</h3>
 
         <p>
-         We would host the shared task in CodaLab where participants would be submitting their system-runs.
+          We would use the <a href="https://competitions.codalab.org/">CodaLab platform</a> to host the shared task. The server is not set yet. We would update our website with the submission details.
+        </p>
+        
+        <h3>Publication</h3>
+        
+        <p>
+          All teams are required to submit a brief technical report describing their method. Please submit this using the <a href="">Interspeech 2021 paper template</a>. All reports must be a minimum of 1 page and a maximum of 4 pages excluding references. Reports must be written in English. The proceedings would be added to the <a href="https://www.isca-speech.org/iscaweb/index.php/online-archive">ISCA archive</a>.
+        </p>
+        
+        <p>
+          Authors would be additionally invited to submit a full-paper to a special issue of the <a href="https://ufal.mff.cuni.cz/pbml">Prague Bulletin of Mathematical Linguistics (PBML)</a> which is indexed in Google Scholar, DOAJ, etc.
         </p>
 
         <h3>Contact</h3>
